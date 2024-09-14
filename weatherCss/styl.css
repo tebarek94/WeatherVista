@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    max-width: 600px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(7, 1, 1, 0.785);
+}
+.weatherApp{
+    font-size: 42px;
+    text-shadow: 7px 4px rgba(18, 18, 18, 0.5);
+    color: #007bff;
+}
+
+form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc; /* Added border style for clarity */
+    outline: none;
+    font-size: 18px;
+    width: 60%;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    outline: none;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0062cc;
+    transition: background-color 0.3s ease; /* Reduced transition time for quicker feedback */
+}
+
+.icon img {
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.temperature { /* Fixed typo "temprature" to "temperature" */
+    font-size: 48px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+.description { /* Fixed typo "descriaption" to "description" */
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.details > div {
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    flex: 1;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 45px;
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    form input[type="text"] {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .details > div {
+        margin: 5px 0; /* Adjust margin for better spacing */
+    }
+}
